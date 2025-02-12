@@ -1,0 +1,31 @@
+d1
+$ struct "10010010"
+$ slow 2
+$ off "0.5" ( + note 12)
+$ note "c5"
+# sound "superpiano"
++ note "{0 3 5 7 <10 <12 15>>}%8"
+# gain "0.5"
+
+hush
+
+d1 silence
+
+d2
+$ struct "10010010"
+$ note "c4"
+# sound "supersquare"
++ up "<0 3 -4 -2>"
+# gain "0.7"
+# cutoff "900"
+
+d2 silence
+
+d3
+$ stack [
+struct "10101110" $ sound "808bd:3" # gain "1",
+struct "010[1 1 ~ ~]" $ sound "snare:8" # gain "0.7",
+struct "1010" $ sound "hh" # gain "0.8"
+]
+
+hush

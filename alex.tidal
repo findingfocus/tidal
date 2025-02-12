@@ -1,0 +1,23 @@
+d1 $ slow 8 $ jux rev $ off 0.25 (|+ n 12) $ off 0.125 (|+ n 7) $ n "c(3,8) a*2 f(3,8,2) [~ e*2]" # sound "supermandolin" # legato 4
+
+hush
+
+d5 silence
+
+d5 $ slow 8 $ jux rev $ off 0.5 (+ n 12) $ off 0.125 (+ n 7) $ n "f*2 a(3,8) [~ c*2] g(3,8,2)" # sound "supermandolin" # legato 4 # room "0.7" # cutoff "1000"
+
+d6 $ struct "1(5,8)" $ off 0.125 (+n 7) $ sound "superpiano" + note "{3 7 5 0 <10 12>}" # room "0.6" # cutoff "700"
+
+d7 $ struct "10010010" $ sound "superfm" # note "<0 3 -4 -2>"
+
+d7 silence
+
+d5 silence
+
+d2 $ chunk 4 (hurry 2) $ every 3 (#crush 4) $ chunk 4 (hurry 2) $ sound "drum clap:4 [~ snare:3] bd"
+
+d2 silence 
+
+d3 $ jux rev $ chunk 4 (hurry 2) $ sound "birds" # cutoff "800"
+
+d4 $ jux rev $ off 0.5 (+ n 7) $ iter 4 $ chop 4 $ sound "crow"
