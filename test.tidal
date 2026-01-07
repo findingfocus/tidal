@@ -23,3 +23,13 @@ d6 $ fast 2 $ stack [
 ] # gain "0.3"
 
 hush
+
+d1 $ jux rev $ slow 4 $ n (off "q" (|+ "<-7 5>")
+  $ off "e" (|+ 12) $ "c3(2,4) c4(8, 16) d4 e3(3,8)") # s "superhammond"
+  # legato 1
+# room 0.4 # sz 0.9 # gain 0.8
+
+d2 $ sound "~ bd*2 bd clap:4" # delay 0.4
+# delayt (1/6) # delayfb 0.4 # lock 1 # lpf 1300
+
+d3 $ splice 8 "<0 3 2> " $ sound "break"
