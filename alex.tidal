@@ -1,4 +1,4 @@
-d1 $ slow 8 $ jux rev $ off 0.25 (|- n 12) $ off 0.125 (|+ n 7) $ n "c(3,8) a*2 f(3,8,2) [~ e*2]" # sound "superpiano" # legato 3 # cutoff 800
+d1 $ slow 8 $ jux rev $ off 0.25 (|- n 12) $ off 0.125 (|+ n 7) $ n "a(3,8) f*2 d(3,8,2) [~ e*2]" # sound "superpiano" # legato 3 # cutoff 800 # gain 0.7
 
 hush
 
@@ -18,11 +18,15 @@ d2 $ chunk 4 (hurry 2) $ every 3 (#crush 4) $ chunk 4 (hurry 2) $ sound "drum cl
 
 d2 silence 
 
-d2 $ jux rev $ sound "drum clap:4 [~ snare:3] bd*2" # cutoff 1200
+d2 $ jux rev $ sound "drum clap:4 [~ snare:3] bd*2" # cutoff 1200 # gain 0.6
+
+d2 $ jux rev $ sound "kick clap [~ snare:3] bd" # cutoff 700 # gain 0.8
 
 
 d3 $ chunk 4 (hurry 2) $ sound "birds" # cutoff "800"
 
+d4 $ jux rev $ sound "clap:5*2 ~" # cutoff 100
+
 hush
 
-d4 $ jux rev $ off 0.5 (+ n 7) $ iter 4 $ chop 4 $ sound "crow" # gain "0.8"
+d4 $ jux rev $ off 0.5 (+ n 7) $ iter 4 $ chop 4 $ sound "crow" # gain "0.5"
