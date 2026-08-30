@@ -1,8 +1,20 @@
-d1 $ slow 8 $ jux rev $ off 0.25 (|- n 12) $ off 0.125 (|+ n 7) $ n "a(3,8) f*2 d(3,8,2) [~ e*2]" # sound "superpiano" # legato 3 # cutoff 800 # gain 0.7
+d1 $ slow 16 $ jux rev $ off 0.25 (|- n 12) $ off 0.125 (|+ n 7) $ n "c a*2 f(1,8,2) [~ e*2]" # sound "superpiano" # legato 2 # cutoff 600 # gain 0.85
+
+d1 $ slow 16 $ jux rev $ off 0.25 (|- n 12) $ n "c a*2 <f g> <e a>" # sound "superpiano" # legato 2 # gain 0.75
+
+d2 $ every 2 (# crush 8) $ sound "<drum*2 drum*4 drum*4> <cp:5 cp:2>" # cutoff 900
+
+d3 $ slow 2 $ jux rev $ n "g a f <e c>" # sound "superfm" # legato 2 # cutoff 120
+
+d1 $ slow 8 $ jux rev $ off 0.125 (|- n 12) $ n "c a*2 f(1,8,2) [~ e*2]" # sound "superpiano" # legato 4 # cutoff 500 # gain 0.80
+
+d2 $ slow 8 $ jux rev $ n "<g c> f a <c e>" # sound "superhammond" |+ n "-12" # cutoff 120
+
+d3 $ jux rev $ chunk 4 (hurry 2) $ every 2 (# crush 4) $ sound "drum cp:5 [~ cp:5] bd" # cutoff 500
+
+d2 $ slow 8 $ n "<g ~> a f <e c>" # sound "superhammond" |+ n "-12" # cutoff 50
 
 hush
-
-d5 silence
 
 d5 $ slow 8 $ jux rev $ off 0.5 (+ n 5) $ off 0.125 (+ n 7) $ n "f*2 a(3,8) [~ c*2] g(3,8,2)" # sound "supermandolin" # legato 4 # room "0.7" # cutoff "1000"
 
@@ -14,19 +26,21 @@ d7 silence
 
 d5 silence
 
-d2 $ chunk 4 (hurry 2) $ every 3 (#crush 4) $ chunk 4 (hurry 2) $ sound "drum clap:4 [~ snare:3] bd"
+d3 $ chunk 4 (hurry 2) $ every 3 (#crush 4) $ chunk 4 (hurry 2) $ sound "drum cp:5 [~] bd" # gain "0.75" # cutoff 900
 
-d2 silence 
+d2 silence
 
-d2 $ jux rev $ sound "drum clap:4 [~ snare:3] bd*2" # cutoff 1200 # gain 0.6
+d2 $ jux rev $ sound "drum cp:4 [~ snare:3] bd*2" # gain 0.6
 
-d2 $ jux rev $ sound "kick clap [~ snare:3] bd" # cutoff 700 # gain 0.8
+d2 $ jux rev $ sound "kick cp [~ snare:3] bd" # cutoff 700 # gain 0.8
 
 
 d3 $ chunk 4 (hurry 2) $ sound "birds" # cutoff "800"
 
-d4 $ jux rev $ sound "clap:5*2 ~" # cutoff 100
+d3 silence
+
+d4 $ jux rev $ sound "cp:5*2 ~" # cutoff 100
 
 hush
 
-d4 $ jux rev $ off 0.5 (+ n 7) $ iter 4 $ chop 4 $ sound "crow" # gain "0.5"
+d4 $ jux rev $ off 0.3 (+ n 7) $ iter 4 $ chop 4 $ sound "crow" # gain "0.3"

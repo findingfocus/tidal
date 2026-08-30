@@ -1,0 +1,5 @@
+d1 $ slow 16 $ jux rev $ off 0.25 (|- n 12) $ off 0.125 (|+ n 7) $ n "c a*2 f(1,8,2) [~ e*2]" # sound "superpiano" # legato 2 # cutoff 600 # gain 0.85
+
+d2 $ every 2 (# crush 8) $ sound "<drum*2 drum*4 drum*4> <cp:5 cp:2>" # cutoff 900
+
+d3 $ slow 2 $ jux rev $ n "g a f <e c>" # sound "superfm" # legato 2 # cutoff 120
