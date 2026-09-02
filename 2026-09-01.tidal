@@ -1,0 +1,5 @@
+d1 $ jux rev $ every 2 (# crush 1) $ arp "down" $ n "c'maj4 a'min4 <f'maj g'maj4>" # sound "supermandolin" # sustain 2 # cutoff 1100 # gain 1
+
+d2 $ jux rev $ slow 8 $ n ( off 0.125 (|- 12) $ off 0.125 (|- 7) "c(1,8,2) a*2 f <e g>") # sound "superpiano" # legato 1 # gain 0.65 # cutoff 1200
+
+d3 $ s "bd*2 <hc*3 cp:3>" # gain 0.8 # cutoff 900
