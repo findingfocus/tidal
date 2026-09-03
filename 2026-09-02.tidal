@@ -1,12 +1,5 @@
-d1 $ off 0.01 (|- n 12) $ slow 2 $ rarely (# crush 4) $ chunk 1 (|- 5) $ jux rev $ arp "<up down thumbup up>" $ n "<c'maj'9 a'min9 f'maj7 g'sus4>"
-# sound "supermandolin"
-# sustain 2 # room 0.3 # cutoff 800
+d1 $ off 0.01 (|- n 12) $ slow 2 $ rarely (# crush 4) $ chunk 1 (|- 5) $ jux rev $ arp "<up down thumbup up>" $ n "<c'maj'9 a'min9 f'maj7 g'sus4>" # sound "supermandolin" # sustain 2 # room 0.3 # cutoff 800
 
-d2 $ slow 2 $ n ("<c a f g>" - 12)
-# s "superhammond"
-# legato 1
-# cutoff 100
-# room 0.4
+d2 $ slow 2 $ n ("<c a f g>" - 12) # s "superhammond" # legato 1 # cutoff 100 # room 0.4
 
-d3 $ slow 2 $ s "<cp>"
-# cutoff 600
+d3 $ slow 2 $ s "<cp>" # cutoff 600
