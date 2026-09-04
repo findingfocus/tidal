@@ -18,10 +18,10 @@ $ note "c3"
 # cutoff 600
 
 d3
-$ chunk 2
+$ chunk 4
 (hurry 2)
 $ stack [
 struct "10101110" $ sound "808bd:3" # gain "1",
-struct "010[1 1 ~ ~]" $ sound "snare:8" # gain "0.7",
+struct "010[1 1 ~ ~]" $ sound "sn:5" # gain "0.7" # cutoff 2800,
 struct "1011" $ sound "hh" # gain 1 # cutoff 300
 ]
