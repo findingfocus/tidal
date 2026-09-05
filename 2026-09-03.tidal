@@ -1,25 +1,15 @@
-d1
-$ chunk 4
-(hurry 2)
-$ struct "10010010"
-$ off "0.5" ( + note 12)
+d1 $ chunk 4 (hurry 2) $ struct "10010010" $ off "0.5" ( + note 12)
 $ note "c3"
 # sound "superpiano"
 + note "{0 3 5 7 10 12}"
 # gain 0.8
 # cutoff 700
 
-d2
-$ struct "10010010"
-$ note "c3"
-# sound "supersquare"
-+ up "{<0 3 -4 -2>}"
+d2 $ struct "10010010" $ note "c3" # sound "supersquare" + up "{<0 3 -4 -2>}"
 # gain 0.8
 # cutoff 600
 
-d3
-$ chunk 4
-(hurry 2)
+d3 $ chunk 4 (hurry 2)
 $ stack [
 struct "10101110" $ sound "808bd:3" # gain "1",
 struct "010[1 1 ~ ~]" $ sound "sn:5" # gain "0.7" # cutoff 2800,
